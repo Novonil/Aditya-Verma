@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 public class KSmallestElement {
     public static int[] KSmallestValues(int[] arr, int K){
         int[] result = new int[K];
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(K, Collections.reverseOrder());
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(Collections.reverseOrder());
         
         for(int i : arr)
         {

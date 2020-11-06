@@ -7,7 +7,7 @@ public class KthSmallestElement {
     public static int KthSmallestValue(int[] arr, int K)
     {
         //Generally Sorted in Ascending Order - Collections.ReversedOrder Sorts in Ascending Order
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(K, Collections.reverseOrder());
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(Collections.reverseOrder());
         for(int i : arr)
         {
             maxHeap.add(i);
