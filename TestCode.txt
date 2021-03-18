@@ -1,0 +1,135 @@
+﻿
+
+ ------<<  NearestSmallerElementToLeft, NearestSmallerElementToRight, NearestGreaterElementToLeft, NearestElementGreaterToRight >>------
+
+List<int> l = new List<int>();
+l.Add(1);
+l.Add(3);
+l.Add(0);
+l.Add(0);
+l.Add(1);
+l.Add(2);
+l.Add(4);
+
+int[] res = StackPractice.NearestGreaterToRight.NearestElementGreaterToRight(l);
+int[] res1 = StackPractice.NearestGreaterToLeft.NearestGreaterElementToLeft(l);
+int[] res11 =  StackPractice.NearestSmallerToRight.NearestSmallerElementToRight(l);
+int[] res111 = StackPractice.NearestSmallerToLeft.NearestSmallerElementToLeft(l);
+
+foreach (int i in res)
+	Console.WriteLine(i);
+Console.WriteLine();
+
+foreach (int i in res1)
+	Console.WriteLine(i);
+Console.WriteLine();
+
+foreach (int i in res11)
+	Console.WriteLine(i);
+Console.WriteLine();
+
+foreach (int i in res111)
+	Console.WriteLine(i);
+Console.WriteLine();
+
+
+------<<  Stock Span Problem >>------
+
+List<int> stockPrices = new List<int>();
+
+			stockPrices.Add(100);
+			stockPrices.Add(80);
+			stockPrices.Add(60);
+			stockPrices.Add(70);
+			stockPrices.Add(60);
+			stockPrices.Add(75);
+			stockPrices.Add(85);
+
+			int[] result = StockSpanProblem.StockSpan(stockPrices);
+			
+			foreach (int i in result)
+				Console.WriteLine(i);
+			Console.WriteLine();
+
+			Console.Read();
+
+
+------<<  Stock Span Problem >>------
+
+
+
+------<<  Maximum Area of Histogram >>------
+
+int[,] arr =
+			{
+				{ 0, 1, 1, 0 },
+				{ 1, 1, 1, 1 },
+				{ 1, 1, 1, 1 },
+				{ 1, 1, 0, 0 }
+			};
+
+			int result = StackPractice.MaximumAreaOfRectangleInBinaryMatrix.MaxArea(arr);
+			Console.WriteLine(result);
+
+
+------<<  Maximum Area of Histogram >>------
+
+
+------<<  Rain Water Trapping >>------
+int[] arr = { 3,0,0,2,0, 4};
+
+			int result = StackPractice.RainWaterTrapping.TotalAreaOfWater(arr);
+			Console.WriteLine(result);
+
+------<<  Rain Water Trapping >>------
+
+
+
+------<<  Min Stack >>------
+StackPractice.MinStack m = new StackPractice.MinStack();
+			m.push(5);
+			m.peek();
+			m.minElement();
+			m.push(7);
+			m.peek();
+			m.minElement();
+			m.push(2);
+			m.peek();
+			m.minElement();
+			m.pop();
+			m.peek();
+			m.minElement();
+			m.pop();
+			m.peek();
+			m.minElement();
+			m.push(1);
+			m.peek();
+			m.minElement();
+
+------<<  Min Stack >>------
+
+
+------<<  Min Stack Using Constant Space >>------
+
+int n;
+			StackPractice.MinStackConstantSpace m = new StackPractice.MinStackConstantSpace();
+			m.Push(5);
+			n = m.Peek();
+			n = m.min();
+			m.Push(7);
+			n = m.Peek();
+			n = m.min();
+			m.Push(2);
+			n = m.Peek();
+			n = m.min();
+			n = m.Pop();
+			n = m.Peek();
+			n = m.min();
+			n = m.Pop();
+			n = m.Peek();
+			n = m.min();
+			m.Push(1);
+			n = m.Peek();
+			n = m.min();
+
+------<<  Min Stack Using Constant Space >>------
